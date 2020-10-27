@@ -35,7 +35,10 @@ creamos un repositorio
 
 git clone https://github.com/kolaso13/Markdown
 
-
+## RAMAS:
+git branch "nombre": sirve para crear una rama
+git checkout "nombre": se usa para cambiar entre ramas
+git merge "nombre": se usa para juntar los datos de las ramas
 
 
 
