@@ -147,7 +147,3 @@ He revisado la documentación oficial y lo he logrado usando:
 
 git show --format=format:"Autor: %an" --no-patch
 Donde --format me permite definir el formato y la información del repositorio que quiero mostrar, en este caso uso %an que significa author name, y con --no-patch elimino la salida diff
-
-Obteniendo como resultado:
-
-Autor: Juan Pinz<C3><B3>
