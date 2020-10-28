@@ -1,6 +1,6 @@
-1- Pregunta: ¿Hay alguna manera de deshacer el mismo manteniendo esos cambios en mi copia local para volver a commitearlos correctamente?
+### 1- Pregunta: ¿Hay alguna manera de deshacer el mismo manteniendo esos cambios en mi copia local para volver a commitearlos correctamente?
 
-1- Respuesta:
+### 1- Respuesta:
 Si quieres mantener los cambios:
 
 git reset [--mixed] HEAD~1
@@ -11,9 +11,9 @@ Y si no quieres mantenerlos (y volver al estado del commit anterior, en la prác
 
 git reset --hard HEAD~1
 
-2- Pregunta: ¿Cuáles son específicamente las diferencias entre hacer un git pull y un git fetch?
+### 2- Pregunta: ¿Cuáles son específicamente las diferencias entre hacer un git pull y un git fetch?
 
-2- Respuesta:
+### 2- Respuesta:
 De la documentación:
 
 git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
@@ -24,9 +24,9 @@ git pull es una abreviación de git fetch seguido de git merge FETCH_HEAD.
 
 Es decir, git fetch trae los cambios, pero los deja en otro branch, hasta que se hace el git merge para traerlos al branch local.
 
-3- Preguntas:  ¿cuál es la diferencia entre git rebase y git merge?
+### 3- Preguntas:  ¿cuál es la diferencia entre git rebase y git merge?
 
-3- Respuesta: 
+### 3- Respuesta: 
 Resumen para lectores ávidos de conocimiento rápido: con git rebase tendrás un historial más claro, por lo que suele ser la opción preferida.
 
 Cuando haces git rebase:
@@ -37,9 +37,9 @@ Cuando haces git rebase:
 
 Esto quiere decir que todos tus commits locales aparecen al final, después de los commits remotos. Esto es, si haces git log, los commits de la rama que has rebasado aparecen como si fueran más antiguos, independientemente de cuándo se hicieran.
 
-4- Pregunta: Dado que no he hecho commit ¿cómo quito archivoQueNoQuieroCommitear.js del commit?
+### 4- Pregunta: Dado que no he hecho commit ¿cómo quito archivoQueNoQuieroCommitear.js del commit?
 
-4- Respuesta: 
+### 4- Respuesta: 
 Debes removerlos del index con:
 
 git reset <paths>
@@ -52,9 +52,9 @@ Esta forma restablece las entradas del "index" para todos los <paths> a su corre
 Esto quiere decir que git reset <paths> es lo opuesto a git add <paths>
 
 
-5- Pregunta: ¿Cómo puedo traer los cambios del remoto?
+### 5- Pregunta: ¿Cómo puedo traer los cambios del remoto?
 
-5- Respuesta:
+### 5- Respuesta:
 El primer paso es recibir todos los commits que están en el remoto, para eso hacé
 
 git fetch
@@ -80,9 +80,9 @@ Si los cambios en la historia borraron algún commit que vos tenés local, van a
 
 Usá git command --help para más detalles y ejemplos de cómo aplicar cualquiera de estos comandos.
 
-6- Pregunta: ¿Existe alguna manera de hacer un pull request de commits que no contenga los últimos commits que he realizado en mi repositorio?
+### 6- Pregunta: ¿Existe alguna manera de hacer un pull request de commits que no contenga los últimos commits que he realizado en mi repositorio?
 
-6- Respuesta:
+### 6- Respuesta:
 puedes usar rebase:
 
 git checkout master 
@@ -99,14 +99,14 @@ git checkout -b branch_nuevo
 git cherry-pick <revisión 1> <revisión 2> ... <revisión N>
 Así tendrás un branch nuevo con sólo los comits que quieres, y lo puedes usar como normal en GitHub.
 
-7- Pregunta: Cual es la diferencia entre --force y --force-with-lease en git?
+### 7- Pregunta: Cual es la diferencia entre --force y --force-with-lease en git?
 
-7- Respuesta:
+### 7- Respuesta:
 Git push --force es destructiva porque incondicionalmente sobrescribe el repositorio remoto con lo que tenga a nivel local, posiblemente sobrescribir cualquier cambio que un miembro del equipo ha empujado, lo cual puedes borrar los cambios de algún miembro. Sin embargo hay una manera mejor la opción --force-with-lease la cual es la mejor recomendada puede ayudar cuando se necesita hacer un empuje forzado pero todavía asegurarse de no sobrescribir el trabajo de otros.
 
-8- Pregunta: Agregar usuarios a un proyecto Git
+### 8- Pregunta: Agregar usuarios a un proyecto Git
 
-8- Respuesta:
+### 8- Respuesta:
 
 Debes de dirigirte a Settings -> User and group access -> Users y agrega el usuario por su correo. Recuerda que el usuario debe de estar registrado en bitbucket para que te aparezca en la lista.
 
@@ -120,9 +120,9 @@ Si en la url aparece tu usuario entonces tienes que editar y cambiarlo por el us
 
 git remote set-url origin  https://<nombre_de_tu_cuenta>@bitbucket.org/<la_nueva_cuenta>/<nombre_repositorio>
 
-9- Pregunta: ¿En que momento debo realizar un commit en git?
+### 9- Pregunta: ¿En que momento debo realizar un commit en git?
 
-9- Respuesta: 
+### 9- Respuesta: 
 De forma general y no específicamente en Git siempre es recomendable hacer commits seguidos para tener tus cambios versionados y disponibles en el control de código fuente.
 
 De manera específica en Git y respondiendo la pregunta específica que has formulado:
@@ -140,9 +140,9 @@ Al final lo mas importante que debes recordar es lo que menciona @Kristian Damia
 
 El resto puede ser muy subjetivo y depende de cada caso y cada persona
 
-10- Pregunta: ¿Cómo obtener el nombre del autor de un repositorio GIT?
+### 10- Pregunta: ¿Cómo obtener el nombre del autor de un repositorio GIT?
 
-10- Respuestas:
+### 10- Respuestas:
 He revisado la documentación oficial y lo he logrado usando:
 
 git show --format=format:"Autor: %an" --no-patch
