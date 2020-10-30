@@ -108,7 +108,7 @@ Git push --force es destructiva porque incondicionalmente sobrescribe el reposit
 
 ### 8- Respuesta:
 
-Debes de dirigirte a Settings -> User and group access -> Users y agrega el usuario por su correo. Recuerda que el usuario debe de estar registrado en bitbucket para que te aparezca en la lista.
+Debes de dirigirte a <u>Settings -> User and group access -> Users y agrega el usuario por su correo.</u> Recuerda que el usuario debe de estar registrado en bitbucket para que te aparezca en la lista.
 
 Aqui una imagen para que te puedas guiar:
 ![Imagen1](https://i.stack.imgur.com/ttMMN.png)
@@ -133,9 +133,9 @@ Tienes una tarea asignada cuya especificación es crear una barra de navegación
 Estas trabajando en un topic branch (también llamado feature branch)
 Mi recomendación es la siguiente:
 
-- Si te sientes a gusto y confiado en que puedes entregar los cambios correspondientes a toda la especificación sin problemas ya que la tarea no es muy compleja, entonces bastará con un solo commit.
-- Si la tarea es demasiado compleja, te recomendaría proponer dividir la tarea en varias subtareas de modo que puedas asociar cada paso particular de la construcción de por ejemplo la barra de navegación a un commit específico.
-- Si la tarea es simple sin embargo consideras que te conviene mas realizar varios commits por el motivo que sea, por ejemplo porque quieres enteder mejor los cambios o te parece mas ordenado, entonces hazlo de esa manera, no hay ningún problema. Si de todas maneras hubiera una política de un checkin por tarea o si luego te arrepientes y consideras que has hecho muchos checkins para algo muy simple siempre tienes la posibilidad de juntarlos en uno solo antes de hacer push mediante lo que se conoce como squash
+- Si te sientes a gusto y confiado en que puedes entregar los cambios correspondientes a toda la especificación sin problemas ya que la tarea no es muy compleja, <u>entonces bastará con un solo commit.</u>
+- Si la tarea es demasiado compleja, <u>te recomendaría proponer dividir la tarea en varias subtareas de modo que puedas asociar cada paso particular de la construcción de por ejemplo la barra de navegación a un commit específico.</u>
+
 Al final lo mas importante que debes recordar es lo que menciona @Kristian Damian en su respuesta: Básicamente que cada checkin debe contener cambios que funcionalmente estén completos sin que rompa el código, unit test o proceso de build que tengas establecido.
 
 El resto puede ser muy subjetivo y depende de cada caso y cada persona
