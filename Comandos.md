@@ -3,11 +3,19 @@ code . : arranca VSC del directorio donde estamos
 
 rd /s/q directorio: es para borrar un directorio en cmd
 
+dir: ver los objetos que hay en un directorio.
+
+mkdir "nombre": crear directorios.
+
+echo “hola mundo” > leeme.txt : crear un archivo con texto.
+
 
 ## GIT:
-git version
+git version: ver la version de git.
 
 git init: para inicializar git
+
+git ignore: para ignorar objetos ejemplo(*.rar; *.txt; ...)
 
 git status -s: para saber que archivos no tienen seguimientos
 
@@ -20,6 +28,8 @@ git log --oneline : sirve para ver los identificadores de los commit
 git reset --hard (identificador) : sirve para viajar a ese archivo guardado según su identificador
 
 git push : sirve para subir a github archivos
+
+git pull : sirve para bajar al "master" archivos.
 
 ### dos maneras:
 git remote add origin https://github.com/kolaso13/Markdown
