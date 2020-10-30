@@ -33,7 +33,7 @@ esto sirve para añadir el repositorio donde guardar los archivos en github.
 creamos un repositorio
 
 
-git clone https://github.com/kolaso13/Markdown
+git clone https://github.com/kolaso13/Markdown : clonar el repositorio en la maquina ("master").
 
 ## RAMAS:
 git branch "nombre": sirve para crear una rama
